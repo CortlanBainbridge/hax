@@ -1,0 +1,659 @@
+{
+	"name" : "Car Racing",
+	"width" : 1200,
+	"height" : 600,
+	"spawnDistance" : 1120,
+	"bg" : { "type" : "hockey", "width" : 0, "height" : 0, "kickOffRadius" : 0, "cornerRadius" : 0 },
+
+	"vertexes" : [
+
+		/* 0. car ready position */
+			{ "x" : 364, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 332, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 332, "y" : 112, "trait" : "ready_vertex" },
+			{ "x" : 364, "y" : 112, "trait" : "ready_vertex" },
+
+			{ "x" : 364, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 332, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 332, "y" : 176, "trait" : "ready_vertex" },
+			{ "x" : 364, "y" : 176, "trait" : "ready_vertex" },
+
+			{ "x" : 428, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 396, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 396, "y" : 112, "trait" : "ready_vertex" },
+			{ "x" : 428, "y" : 112, "trait" : "ready_vertex" },
+
+			{ "x" : 428, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 396, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 396, "y" : 176, "trait" : "ready_vertex" },
+			{ "x" : 428, "y" : 176, "trait" : "ready_vertex" },
+
+			{ "x" : 492, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 460, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 460, "y" : 112, "trait" : "ready_vertex" },
+			{ "x" : 492, "y" : 112, "trait" : "ready_vertex" },
+
+			{ "x" : 492, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 460, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 460, "y" : 176, "trait" : "ready_vertex" },
+			{ "x" : 492, "y" : 176, "trait" : "ready_vertex" },
+
+			{ "x" : 556, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 524, "y" : 80, "trait" : "ready_vertex" },
+			{ "x" : 524, "y" : 112, "trait" : "ready_vertex" },
+			{ "x" : 556, "y" : 112, "trait" : "ready_vertex" },
+
+			{ "x" : 556, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 524, "y" : 144, "trait" : "ready_vertex" },
+			{ "x" : 524, "y" : 176, "trait" : "ready_vertex" },
+			{ "x" : 556, "y" : 176, "trait" : "ready_vertex" },
+
+		/* 80. start line */
+			{ "x" : 268, "y" : 48, "trait" : "wall_vertex" },
+			{ "x" : 268, "y" : 208, "trait" : "wall_vertex" },
+
+		/* 82. outer track outside */
+			{ "x" : 1004, "y" : 208, "trait" : "wall_vertex" },
+			{ "x" : -18, "y" : 208, "trait" : "wall_vertex" },
+			{ "x" : -47, "y" : 220, "trait" : "wall_vertex" },
+			{ "x" : -304, "y" : 477, "trait" : "wall_vertex" },
+			{ "x" : -446, "y" : 536, "trait" : "wall_vertex" },
+			{ "x" : -1136, "y" : 536, "trait" : "wall_vertex" },
+			{ "x" : -1136, "y" : 376, "trait" : "wall_vertex" },
+			{ "x" : -1040, "y" : 376, "trait" : "wall_vertex" },
+
+			{ "x" : -1008, "y" : 344, "trait" : "wall_vertex" },
+			{ "x" : -1008, "y" : 0, "trait" : "wall_vertex" },
+			{ "x" : -1013, "y" : -21, "trait" : "wall_vertex" },
+			{ "x" : -1131, "y" : -257, "trait" : "wall_vertex" },
+			{ "x" : -1136, "y" : -278, "trait" : "wall_vertex" },
+			{ "x" : -1136, "y" : -290, "trait" : "wall_vertex" },
+
+			{ "x" : -716, "y" : -464, "trait" : "wall_vertex" },
+			{ "x" : -616, "y" : -364, "trait" : "wall_vertex" },
+			{ "x" : -576, "y" : -267, "trait" : "wall_vertex" },
+			{ "x" : -576, "y" : -167, "trait" : "wall_vertex" },
+			{ "x" : -544, "y" : -167, "trait" : "wall_vertex" },
+			{ "x" : -544, "y" : -407, "trait" : "wall_vertex" },
+			{ "x" : -342, "y" : -504, "trait" : "wall_vertex" },
+			{ "x" : -142, "y" : -304, "trait" : "wall_vertex" },
+			{ "x" : -88, "y" : -295, "trait" : "wall_vertex" },
+			{ "x" : 112, "y" : -395, "trait" : "wall_vertex" },
+			{ "x" : 124, "y" : -404, "trait" : "wall_vertex" },
+			{ "x" : 216, "y" : -496, "trait" : "wall_vertex" },
+			{ "x" : 313, "y" : -536, "trait" : "wall_vertex" },
+			{ "x" : 1004, "y" : -536, "trait" : "wall_vertex" },
+
+			{ "x" : 1127, "y" : -485, "trait" : "red_wall" },
+			{ "x" : 1160, "y" : -452, "trait" : "red_wall" },
+			{ "x" : 1200, "y" : -355, "trait" : "wall_vertex" },
+			{ "x" : 1200, "y" : 176, "trait" : "wall_vertex" },
+			{ "x" : 1136, "y" : 266, "trait" : "wall_vertex" },
+
+			{ "x" : 1104, "y" : 272, "trait" : "wall_vertex" },
+			{ "x" : 12, "y" : 272, "trait" : "wall_vertex" },
+			{ "x" : 12, "y" : 240, "trait" : "wall_vertex" },
+			{ "x" : 1004, "y" : 240, "trait" : "wall_vertex" },
+
+		/* 119. outer track inside */
+			{ "x" : 1072, "y" : -112, "trait" : "wall_vertex" },
+			{ "x" : 1072, "y" : -20, "trait" : "wall_vertex" },
+			{ "x" : 1004, "y" : 48, "trait" : "wall_vertex" },
+			{ "x" : -18, "y" : 48, "trait" : "wall_vertex" },
+			{ "x" : -160, "y" : 107, "trait" : "wall_vertex" },
+			{ "x" : -417, "y" : 364, "trait" : "wall_vertex" },
+			{ "x" : -446, "y" : 376, "trait" : "wall_vertex" },
+			{ "x" : -848, "y" : 376, "trait" : "wall_vertex" },
+
+			{ "x" : -912, "y" : 312, "trait" : "wall_vertex" },
+			{ "x" : -912, "y" : 0, "trait" : "wall_vertex" },
+			{ "x" : -927, "y" : -64, "trait" : "wall_vertex" },
+			{ "x" : -1023, "y" : -256, "trait" : "wall_vertex" },
+			{ "x" : -1028, "y" : -277, "trait" : "wall_vertex" },
+			{ "x" : -1028, "y" : -290, "trait" : "wall_vertex" },
+
+			{ "x" : -784, "y" : -396, "trait" : "wall_vertex" },
+			{ "x" : -684, "y" : -296, "trait" : "wall_vertex" },
+			{ "x" : -672, "y" : -267, "trait" : "wall_vertex" },
+			{ "x" : -672, "y" : -167, "trait" : "wall_vertex" },
+			{ "x" : -464, "y" : -167, "trait" : "wall_vertex" },
+			{ "x" : -464, "y" : -407, "trait" : "wall_vertex" },
+			{ "x" : -410, "y" : -436, "trait" : "wall_vertex" },
+			{ "x" : -210, "y" : -236, "trait" : "wall_vertex" },
+			{ "x" : -45, "y" : -209, "trait" : "wall_vertex" },
+			{ "x" : 155, "y" : -309, "trait" : "wall_vertex" },
+			{ "x" : 192, "y" : -336, "trait" : "wall_vertex" },
+			{ "x" : 284, "y" : -428, "trait" : "wall_vertex" },
+			{ "x" : 313, "y" : -440, "trait" : "wall_vertex" },
+			{ "x" : 1004, "y" : -440, "trait" : "wall_vertex" },
+
+			{ "x" : 1072, "y" : -372, "trait" : "wall_vertex" },
+			{ "x" : 1072, "y" : -144, "trait" : "wall_vertex" },
+
+		/* 149. inner track outside */
+			{ "x" : 1040, "y" : -112, "trait" : "inner_track_vertex" },
+			{ "x" : 1040, "y" : -36, "trait" : "inner_track_vertex" },
+			{ "x" : 988, "y" : 16, "trait" : "inner_track_vertex" },
+			{ "x" : -18, "y" : 16, "trait" : "inner_track_vertex" },
+			{ "x" : -183, "y" : 84, "trait" : "inner_track_vertex" },
+			{ "x" : -423, "y" : 324, "trait" : "inner_track_vertex" },
+			{ "x" : -469, "y" : 344, "trait" : "inner_track_vertex" },
+			{ "x" : -832, "y" : 344, "trait" : "inner_track_vertex" },
+
+			{ "x" : -880, "y" : 296, "trait" : "inner_track_vertex" },
+			{ "x" : -880, "y" : 0, "trait" : "inner_track_vertex" },
+			{ "x" : -898, "y" : -78, "trait" : "inner_track_vertex" },
+			{ "x" : -987, "y" : -256, "trait" : "inner_track_vertex" },
+			{ "x" : -996, "y" : -290, "trait" : "inner_track_vertex" },
+
+			{ "x" : -807, "y" : -373, "trait" : "inner_track_vertex" },
+			{ "x" : -723, "y" : -289, "trait" : "inner_track_vertex" },
+			{ "x" : -704, "y" : -243, "trait" : "inner_track_vertex" },
+			{ "x" : -704, "y" : -167, "trait" : "inner_track_vertex" },
+			{ "x" : -432, "y" : -167, "trait" : "inner_track_vertex" },
+			{ "x" : -432, "y" : -214, "trait" : "inner_track_vertex" },
+			{ "x" : -292, "y" : -272, "trait" : "inner_track_vertex" },
+			{ "x" : -233, "y" : -213, "trait" : "inner_track_vertex" },
+			{ "x" : -31, "y" : -181, "trait" : "inner_track_vertex" },
+			{ "x" : 169, "y" : -281, "trait" : "inner_track_vertex" },
+			{ "x" : 215, "y" : -313, "trait" : "inner_track_vertex" },
+			{ "x" : 291, "y" : -389, "trait" : "inner_track_vertex" },
+			{ "x" : 337, "y" : -408, "trait" : "inner_track_vertex" },
+			{ "x" : 988, "y" : -408, "trait" : "inner_track_vertex" },
+
+			{ "x" : 1040, "y" : -356, "trait" : "inner_track_vertex" },
+			{ "x" : 1040, "y" : -144, "trait" : "inner_track_vertex" },
+
+		/* 178. inner track inside */
+			{ "x" : 1008, "y" : -112, "trait" : "inner_track_vertex" },
+			{ "x" : 1008, "y" : -36, "trait" : "inner_track_vertex" },
+			{ "x" : 988, "y" : -16, "trait" : "inner_track_vertex" },
+			{ "x" : -18, "y" : -16, "trait" : "inner_track_vertex" },
+			{ "x" : -206, "y" : 61, "trait" : "inner_track_vertex" },
+			{ "x" : -446, "y" : 301, "trait" : "inner_track_vertex" },
+			{ "x" : -469, "y" : 312, "trait" : "inner_track_vertex" },
+			{ "x" : -832, "y" : 312, "trait" : "inner_track_vertex" },
+
+			{ "x" : -848, "y" : 296, "trait" : "inner_track_vertex" },
+			{ "x" : -848, "y" : 0, "trait" : "inner_track_vertex" },
+			{ "x" : -870, "y" : -93, "trait" : "inner_track_vertex" },
+			{ "x" : -959, "y" : -271, "trait" : "inner_track_vertex" },
+			{ "x" : -964, "y" : -290, "trait" : "inner_track_vertex" },
+
+			{ "x" : -830, "y" : -350, "trait" : "inner_track_vertex" },
+			{ "x" : -746, "y" : -266, "trait" : "inner_track_vertex" },
+			{ "x" : -736, "y" : -243, "trait" : "inner_track_vertex" },
+			{ "x" : -736, "y" : -167, "trait" : "inner_track_vertex" },
+			{ "x" : -400, "y" : -167, "trait" : "inner_track_vertex" },
+			{ "x" : -400, "y" : -214, "trait" : "inner_track_vertex" },
+			{ "x" : -315, "y" : -249, "trait" : "inner_track_vertex" },
+			{ "x" : -256, "y" : -190, "trait" : "inner_track_vertex" },
+			{ "x" : -17, "y" : -153, "trait" : "inner_track_vertex" },
+			{ "x" : 183, "y" : -253, "trait" : "inner_track_vertex" },
+			{ "x" : 238, "y" : -290, "trait" : "inner_track_vertex" },
+			{ "x" : 314, "y" : -366, "trait" : "inner_track_vertex" },
+			{ "x" : 337, "y" : -376, "trait" : "inner_track_vertex" },
+			{ "x" : 988, "y" : -376, "trait" : "inner_track_vertex" },
+
+			{ "x" : 1008, "y" : -356, "trait" : "inner_track_vertex" },
+			{ "x" : 1008, "y" : -144, "trait" : "inner_track_vertex" },
+
+		/* 207. word */
+			{ "x" : 6, "y" : 288, "trait" : "word_vertex" },
+			{ "x" : 12, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 12, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 6, "y" : 287, "trait" : "word_vertex" },
+			{ "x" : 11, "y" : 285, "trait" : "word_vertex" },
+			{ "x" : 11, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 33, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 45, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 45, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 34, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 34, "y" : 303, "trait" : "word_vertex" },
+			{ "x" : 45, "y" : 303, "trait" : "word_vertex" },
+
+			{ "x" : 33, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 44, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 44, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 33, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 33, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 45, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 62, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 75, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 62, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 75, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 62, "y" : 303, "trait" : "word_vertex" },
+			{ "x" : 75, "y" : 303, "trait" : "word_vertex" },
+
+			{ "x" : 62, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 75, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 62, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 75, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 62, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 75, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 920, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 900, "y" : 303, "trait" : "word_vertex" },
+			{ "x" : 972, "y" : 303, "trait" : "word_vertex" },
+
+			{ "x" : 920, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 900, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 972, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 989, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1002, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 989, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 1002, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 989, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 990, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 1002, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 989, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 1002, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 990, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 1012, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1012, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 1013, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1013, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 1023, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 1023, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1035, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 1035, "y" : 283, "trait" : "word_vertex" },
+
+			{ "x" : 1024, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 1024, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1036, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 1036, "y" : 283, "trait" : "word_vertex" },
+
+			{ "x" : 1046, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1046, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 1047, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1047, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 1070, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1057, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1057, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 1069, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 1069, "y" : 303, "trait" : "word_vertex" },
+			{ "x" : 1057, "y" : 303, "trait" : "word_vertex" },
+
+			{ "x" : 1070, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 1058, "y" : 284, "trait" : "word_vertex" },
+			{ "x" : 1058, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 1070, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 1070, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 1057, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 1080, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1080, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 1080, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 1092, "y" : 293, "trait" : "word_vertex" },
+			{ "x" : 1092, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1092, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 1081, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1081, "y" : 304, "trait" : "word_vertex" },
+			{ "x" : 1081, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 1093, "y" : 294, "trait" : "word_vertex" },
+			{ "x" : 1093, "y" : 283, "trait" : "word_vertex" },
+			{ "x" : 1093, "y" : 304, "trait" : "word_vertex" },
+
+			{ "x" : 364, "y" : 48, "trait" : "ready_vertex" },
+			{ "x" : 364, "y" : 208, "trait" : "ready_vertex" }
+	],
+
+	"segments" : [
+
+		/* car ready position */
+			{ "v0" : 0, "v1" : 1, "trait" : "ready" },
+			{ "v0" : 1, "v1" : 2, "trait" : "ready" },
+			{ "v0" : 2, "v1" : 3, "trait" : "ready" },
+
+			{ "v0" : 4, "v1" : 5, "trait" : "ready" },
+			{ "v0" : 5, "v1" : 6, "trait" : "ready" },
+			{ "v0" : 6, "v1" : 7, "trait" : "ready" },
+
+			{ "v0" : 8, "v1" : 9, "trait" : "ready" },
+			{ "v0" : 9, "v1" : 10, "trait" : "ready" },
+			{ "v0" : 10, "v1" : 11, "trait" : "ready" },
+
+			{ "v0" : 12, "v1" : 13, "trait" : "ready" },
+			{ "v0" : 13, "v1" : 14, "trait" : "ready" },
+			{ "v0" : 14, "v1" : 15, "trait" : "ready" },
+
+			{ "v0" : 16, "v1" : 17, "trait" : "ready" },
+			{ "v0" : 17, "v1" : 18, "trait" : "ready" },
+			{ "v0" : 18, "v1" : 19, "trait" : "ready" },
+
+			{ "v0" : 20, "v1" : 21, "trait" : "ready" },
+			{ "v0" : 21, "v1" : 22, "trait" : "ready" },
+			{ "v0" : 22, "v1" : 23, "trait" : "ready" },
+
+			{ "v0" : 24, "v1" : 25, "trait" : "ready" },
+			{ "v0" : 25, "v1" : 26, "trait" : "ready" },
+			{ "v0" : 26, "v1" : 27, "trait" : "ready" },
+
+			{ "v0" : 28, "v1" : 29, "trait" : "ready" },
+			{ "v0" : 29, "v1" : 30, "trait" : "ready" },
+			{ "v0" : 30, "v1" : 31, "trait" : "ready" },
+
+
+		/* start line */
+			{ "v0" : 32, "v1" : 33, "vis" : true, "bCoef" : 0, "cGroup" : ["redKO", "blueKO"], "cMask" : ["red", "blue"], "color" : "FFFFFF" },
+
+		/* outer track outside */
+			{ "v0" : 34, "v1" : 35, "trait" : "wall" },
+			{ "v0" : 35, "v1" : 36, "trait" : "wall", "curve" : -45 },
+			{ "v0" : 36, "v1" : 37, "trait" : "wall" },
+			{ "v0" : 37, "v1" : 38, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 38, "v1" : 39, "trait" : "wall" },
+			{ "v0" : 39, "v1" : 40, "trait" : "wall" },
+			{ "v0" : 40, "v1" : 41, "trait" : "wall" },
+
+			{ "v0" : 41, "v1" : 42, "trait" : "wall", "curve" : -90 },
+			{ "v0" : 42, "v1" : 43, "trait" : "wall" },
+			{ "v0" : 43, "v1" : 44, "trait" : "wall", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 44, "v1" : 45, "trait" : "wall" },
+			{ "v0" : 45, "v1" : 46, "trait" : "wall", "curve" : 26.565051177077989351572193720453 },
+			{ "v0" : 46, "v1" : 47, "trait" : "wall" },
+
+			{ "v0" : 47, "v1" : 48, "trait" : "wall", "curve" : 135 },
+			{ "v0" : 48, "v1" : 49, "trait" : "wall" },
+			{ "v0" : 49, "v1" : 50, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 50, "v1" : 51, "trait" : "wall" },
+			{ "v0" : 51, "v1" : 52, "trait" : "wall", "curve" : -180 },
+			{ "v0" : 52, "v1" : 53, "trait" : "wall" },
+			{ "v0" : 53, "v1" : 54, "trait" : "wall", "curve" : 135 },
+			{ "v0" : 54, "v1" : 55, "trait" : "wall" },
+			{ "v0" : 55, "v1" : 56, "trait" : "wall", "curve" : -63.434948822922010648427806279547 },
+			{ "v0" : 56, "v1" : 57, "trait" : "wall" },
+			{ "v0" : 57, "v1" : 58, "trait" : "wall", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 58, "v1" : 59, "trait" : "wall" },
+			{ "v0" : 59, "v1" : 60, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 60, "v1" : 61, "trait" : "wall" },
+
+			{ "v0" : 61, "v1" : 62, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 62, "v1" : 63, "trait" : "red_wall" },
+			{ "v0" : 63, "v1" : 64, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 64, "v1" : 65, "trait" : "wall" },
+			{ "v0" : 65, "v1" : 66, "trait" : "wall", "curve" : 70.528779365509308630754000660038 },
+
+			{ "v0" : 67, "v1" : 66, "trait" : "red_wall" },
+
+			{ "v0" : 67, "v1" : 68, "trait" : "wall" },
+			{ "v0" : 68, "v1" : 69, "trait" : "wall", "curve" : 180 },
+			{ "v0" : 69, "v1" : 70, "trait" : "wall" },
+			{ "v0" : 70, "v1" : 34, "trait" : "wall", "curve" : -180 },
+
+
+		/* outer track inside */
+			{ "v0" : 71, "v1" : 72, "trait" : "wall" },
+			{ "v0" : 72, "v1" : 73, "trait" : "wall", "curve" : 90 },
+			{ "v0" : 73, "v1" : 74, "trait" : "wall" },
+			{ "v0" : 74, "v1" : 75, "trait" : "wall", "curve" : -45 },
+			{ "v0" : 75, "v1" : 76, "trait" : "wall" },
+			{ "v0" : 76, "v1" : 77, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 77, "v1" : 78, "trait" : "wall" },
+
+			{ "v0" : 78, "v1" : 79, "trait" : "wall", "curve" : 90 },
+			{ "v0" : 79, "v1" : 80, "trait" : "wall" },
+			{ "v0" : 80, "v1" : 81, "trait" : "wall", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 81, "v1" : 82, "trait" : "wall" },
+			{ "v0" : 82, "v1" : 83, "trait" : "wall", "curve" : 26.565051177077989351572193720453 },
+			{ "v0" : 83, "v1" : 84, "trait" : "wall" },
+
+			{ "v0" : 84, "v1" : 85, "trait" : "wall", "curve" : 135 },
+			{ "v0" : 85, "v1" : 86, "trait" : "wall" },
+			{ "v0" : 86, "v1" : 87, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 87, "v1" : 88, "trait" : "wall" },
+			{ "v0" : 88, "v1" : 89, "trait" : "wall", "curve" : -180 },
+			{ "v0" : 89, "v1" : 90, "trait" : "wall" },
+			{ "v0" : 90, "v1" : 91, "trait" : "wall", "curve" : 135 },
+			{ "v0" : 91, "v1" : 92, "trait" : "wall" },
+			{ "v0" : 92, "v1" : 93, "trait" : "wall", "curve" : -63.434948822922010648427806279547 },
+			{ "v0" : 93, "v1" : 94, "trait" : "wall" },
+			{ "v0" : 94, "v1" : 95, "trait" : "wall", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 95, "v1" : 96, "trait" : "wall" },
+			{ "v0" : 96, "v1" : 97, "trait" : "wall", "curve" : 45 },
+			{ "v0" : 97, "v1" : 98, "trait" : "wall" },
+
+			{ "v0" : 98, "v1" : 99, "trait" : "wall", "curve" : 90 },
+			{ "v0" : 99, "v1" : 100, "trait" : "wall" },
+
+
+		/* inner track outside */
+			{ "v0" : 101, "v1" : 102, "trait" : "inner_track" },
+			{ "v0" : 102, "v1" : 103, "trait" : "inner_track", "curve" : 90 },
+			{ "v0" : 103, "v1" : 104, "trait" : "inner_track" },
+			{ "v0" : 104, "v1" : 105, "trait" : "inner_track", "curve" : -45 },
+			{ "v0" : 105, "v1" : 106, "trait" : "inner_track" },
+			{ "v0" : 106, "v1" : 107, "trait" : "inner_track", "curve" : 45 },
+			{ "v0" : 107, "v1" : 108, "trait" : "inner_track" },
+
+			{ "v0" : 108, "v1" : 109, "trait" : "inner_track", "curve" : 90 },
+			{ "v0" : 109, "v1" : 110, "trait" : "inner_track" },
+			{ "v0" : 110, "v1" : 111, "trait" : "inner_track", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 111, "v1" : 112, "trait" : "inner_track" },
+			{ "v0" : 112, "v1" : 113, "trait" : "inner_track", "curve" : 26.565051177077989351572193720453 },
+
+			{ "v0" : 113, "v1" : 114, "trait" : "inner_track", "curve" : 135 },
+			{ "v0" : 114, "v1" : 115, "trait" : "inner_track" },
+			{ "v0" : 115, "v1" : 116, "trait" : "inner_track", "curve" : 45 },
+			{ "v0" : 116, "v1" : 117, "trait" : "inner_track" },
+			{ "v0" : 117, "v1" : 118, "trait" : "inner_track", "curve" : -180 },
+			{ "v0" : 118, "v1" : 119, "trait" : "inner_track" },
+			{ "v0" : 119, "v1" : 120, "trait" : "inner_track", "curve" : 135 },
+			{ "v0" : 120, "v1" : 121, "trait" : "inner_track" },
+			{ "v0" : 121, "v1" : 122, "trait" : "inner_track", "curve" : -63.434948822922010648427806279547 },
+			{ "v0" : 122, "v1" : 123, "trait" : "inner_track" },
+			{ "v0" : 123, "v1" : 124, "trait" : "inner_track", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 124, "v1" : 125, "trait" : "inner_track" },
+			{ "v0" : 125, "v1" : 126, "trait" : "inner_track", "curve" : 45 },
+			{ "v0" : 126, "v1" : 127, "trait" : "inner_track" },
+
+			{ "v0" : 127, "v1" : 128, "trait" : "inner_track", "curve" : 90 },
+			{ "v0" : 128, "v1" : 129, "trait" : "inner_track" },
+
+		/* inner track inside */
+			{ "v0" : 130, "v1" : 131, "trait" : "inner_track" },
+			{ "v0" : 131, "v1" : 132, "trait" : "inner_track", "curve" : 90 },
+			{ "v0" : 132, "v1" : 133, "trait" : "inner_track" },
+			{ "v0" : 133, "v1" : 134, "trait" : "inner_track", "curve" : -45 },
+			{ "v0" : 134, "v1" : 135, "trait" : "inner_track" },
+			{ "v0" : 135, "v1" : 136, "trait" : "inner_track", "curve" : 45 },
+			{ "v0" : 136, "v1" : 137, "trait" : "inner_track" },
+
+			{ "v0" : 137, "v1" : 138, "trait" : "inner_track", "curve" : 90 },
+			{ "v0" : 138, "v1" : 139, "trait" : "inner_track" },
+			{ "v0" : 139, "v1" : 140, "trait" : "inner_track", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 140, "v1" : 141, "trait" : "inner_track" },
+			{ "v0" : 141, "v1" : 142, "trait" : "inner_track", "curve" : 26.565051177077989351572193720453 },
+
+			{ "v0" : 142, "v1" : 143, "trait" : "inner_track", "curve" : 135 },
+			{ "v0" : 143, "v1" : 144, "trait" : "inner_track" },
+			{ "v0" : 144, "v1" : 145, "trait" : "inner_track", "curve" : 45 },
+			{ "v0" : 145, "v1" : 146, "trait" : "inner_track" },
+			{ "v0" : 146, "v1" : 147, "trait" : "inner_track", "curve" : -180 },
+			{ "v0" : 147, "v1" : 148, "trait" : "inner_track" },
+			{ "v0" : 148, "v1" : 149, "trait" : "inner_track", "curve" : 135 },
+			{ "v0" : 149, "v1" : 150, "trait" : "inner_track" },
+			{ "v0" : 150, "v1" : 151, "trait" : "inner_track", "curve" : -63.434948822922010648427806279547 },
+			{ "v0" : 151, "v1" : 152, "trait" : "inner_track" },
+			{ "v0" : 152, "v1" : 153, "trait" : "inner_track", "curve" : -26.565051177077989351572193720453 },
+			{ "v0" : 153, "v1" : 154, "trait" : "inner_track" },
+			{ "v0" : 154, "v1" : 155, "trait" : "inner_track", "curve" : 45 },
+			{ "v0" : 155, "v1" : 156, "trait" : "inner_track" },
+
+			{ "v0" : 156, "v1" : 157, "trait" : "inner_track", "curve" : 90 },
+			{ "v0" : 157, "v1" : 158, "trait" : "inner_track" },
+
+		/* initial boundary */
+			{ "v0" : 61, "v1" : 98, "trait" : "init_bound" },
+			{ "v0" : 67, "v1" : 70, "trait" : "init_bound" },
+			{ "v0" : 71, "v1" : 101, "trait" : "init_bound" },
+			{ "v0" : 100, "v1" : 71, "trait" : "wall" },
+			{ "v0" : 100, "v1" : 158, "trait" : "init_bound" },
+			{ "v0" : 130, "v1" : 158, "trait" : "init_bound" },
+
+		/* word */
+			{ "v0" : 159, "v1" : 160, "trait" : "word_1" },
+			{ "v0" : 160, "v1" : 161, "trait" : "word_1" },
+
+			{ "v0" : 162, "v1" : 163, "trait" : "word_1" },
+			{ "v0" : 163, "v1" : 164, "trait" : "word_1" },
+
+			{ "v0" : 165, "v1" : 166, "trait" : "word_2" },
+			{ "v0" : 166, "v1" : 167, "trait" : "word_2" },
+			{ "v0" : 167, "v1" : 168, "trait" : "word_2" },
+			{ "v0" : 168, "v1" : 169, "trait" : "word_2" },
+			{ "v0" : 169, "v1" : 170, "trait" : "word_2" },
+
+			{ "v0" : 171, "v1" : 172, "trait" : "word_2" },
+			{ "v0" : 172, "v1" : 173, "trait" : "word_2" },
+			{ "v0" : 173, "v1" : 174, "trait" : "word_2" },
+			{ "v0" : 174, "v1" : 175, "trait" : "word_2" },
+			{ "v0" : 175, "v1" : 176, "trait" : "word_2" },
+
+			{ "v0" : 177, "v1" : 178, "trait" : "word_3" },
+			{ "v0" : 179, "v1" : 180, "trait" : "word_3" },
+			{ "v0" : 181, "v1" : 182, "trait" : "word_3" },
+			{ "v0" : 178, "v1" : 182, "trait" : "word_3" },
+
+			{ "v0" : 183, "v1" : 184, "trait" : "word_3" },
+			{ "v0" : 185, "v1" : 186, "trait" : "word_3" },
+			{ "v0" : 187, "v1" : 188, "trait" : "word_3" },
+			{ "v0" : 184, "v1" : 188, "trait" : "word_3" },
+
+			{ "v0" : 189, "v1" : 190, "trait" : "word_finish" },
+			{ "v0" : 190, "v1" : 191, "trait" : "word_finish" },
+
+			{ "v0" : 192, "v1" : 193, "trait" : "word_finish" },
+			{ "v0" : 193, "v1" : 194, "trait" : "word_finish" },
+
+			{ "v0" : 195, "v1" : 196, "trait" : "word_finish" },
+			{ "v0" : 197, "v1" : 198, "trait" : "word_finish" },
+			{ "v0" : 195, "v1" : 199, "trait" : "word_finish" },
+
+			{ "v0" : 200, "v1" : 201, "trait" : "word_finish" },
+			{ "v0" : 202, "v1" : 203, "trait" : "word_finish" },
+			{ "v0" : 200, "v1" : 204, "trait" : "word_finish" },
+
+			{ "v0" : 205, "v1" : 206, "trait" : "word_finish" },
+
+			{ "v0" : 207, "v1" : 208, "trait" : "word_finish" },
+
+			{ "v0" : 209, "v1" : 210, "trait" : "word_finish" },
+			{ "v0" : 210, "v1" : 211, "trait" : "word_finish" },
+			{ "v0" : 211, "v1" : 212, "trait" : "word_finish" },
+
+			{ "v0" : 213, "v1" : 214, "trait" : "word_finish" },
+			{ "v0" : 214, "v1" : 215, "trait" : "word_finish" },
+			{ "v0" : 215, "v1" : 216, "trait" : "word_finish" },
+
+			{ "v0" : 217, "v1" : 218, "trait" : "word_finish" },
+
+			{ "v0" : 219, "v1" : 220, "trait" : "word_finish" },
+
+			{ "v0" : 221, "v1" : 222, "trait" : "word_finish" },
+			{ "v0" : 222, "v1" : 223, "trait" : "word_finish" },
+			{ "v0" : 223, "v1" : 224, "trait" : "word_finish" },
+			{ "v0" : 224, "v1" : 225, "trait" : "word_finish" },
+			{ "v0" : 225, "v1" : 226, "trait" : "word_finish" },
+
+			{ "v0" : 227, "v1" : 228, "trait" : "word_finish" },
+			{ "v0" : 228, "v1" : 229, "trait" : "word_finish" },
+			{ "v0" : 229, "v1" : 230, "trait" : "word_finish" },
+			{ "v0" : 230, "v1" : 231, "trait" : "word_finish" },
+			{ "v0" : 231, "v1" : 232, "trait" : "word_finish" },
+
+			{ "v0" : 233, "v1" : 234, "trait" : "word_finish" },
+			{ "v0" : 235, "v1" : 236, "trait" : "word_finish" },
+			{ "v0" : 237, "v1" : 238, "trait" : "word_finish" },
+
+			{ "v0" : 239, "v1" : 240, "trait" : "word_finish" },
+			{ "v0" : 241, "v1" : 242, "trait" : "word_finish" },
+			{ "v0" : 243, "v1" : 244, "trait" : "word_finish" },
+
+			{ "v0" : 3, "v1" : 4, "trait" : "ready", "vis" : false},
+			{ "v0" : 0, "v1" : 245, "trait" : "ready","vis" : false },
+			{ "v0" : 7, "v1" : 246, "trait" : "ready","vis" : false }
+
+	],
+
+	"goals" : [
+	],
+
+	"discs" : [
+		{ "pos" : [-1122, 507], "trait" : "cushion" },
+		{ "pos" : [-1122, 481], "trait" : "cushion" },
+		{ "pos" : [-1122, 455], "trait" : "cushion" },
+		{ "pos" : [-1122, 429], "trait" : "cushion" },
+		{ "pos" : [-1122, 403], "trait" : "cushion" },
+
+		{ "pos" : [-1100, 520], "trait" : "cushion" },
+		{ "pos" : [-1100, 494], "trait" : "cushion" },
+		{ "pos" : [-1100, 468], "trait" : "cushion" },
+		{ "pos" : [-1100, 442], "trait" : "cushion" },
+		{ "pos" : [-1100, 416], "trait" : "cushion" },
+		{ "pos" : [-1100, 390], "trait" : "cushion" },
+
+		{ "pos" : [-1122, 507], "trait" : "cushion" },
+		{ "pos" : [-1122, 455], "trait" : "cushion" },
+		{ "pos" : [-1122, 403], "trait" : "cushion" },
+		{ "pos" : [-1100, 494], "trait" : "cushion" },
+		{ "pos" : [-1100, 416], "trait" : "cushion" },
+
+		{ "pos" : [ 7500, 0], "speed" : [-3.9,0], "cMask" : ["ball"],  "bCoef" : 10, "damping" : 1}
+	],
+
+	"planes" : [
+		{ "normal" : [ 0, 1], "dist" : -600 },	// Top wall.
+		{ "normal" : [ 0,-1], "dist" : -600 },	// Bottom wall.
+		{ "normal" : [ 1, 0], "dist" : -1200 },	// Left wall.
+		{ "normal" : [-1, 0], "dist" : -1200 }	// Right wall.
+	],
+
+	"traits" : {
+		"ready_vertex" : { "bCoef" : 0, "cGroup" : ["redKO", "blueKO"], "cMask" : ["red", "blue"] },
+		"ready" : { "vis" : true, "bCoef" : 0, "cGroup" : ["redKO", "blueKO"], "cMask" : ["red", "blue"], "color" : "CCCCCC" },
+		"init_bound" : { "vis" : false, "bCoef" : 0, "cGroup" : ["redKO", "blueKO"], "cMask" : ["red", "blue"] },
+		"wall_vertex" : { "bCoef" : 0.25, "cMask" : ["red", "blue", "ball"] },
+		"wall" : { "vis" : true, "bCoef" : 0.25, "cMask" : ["red", "blue", "ball"], "color" : "303030" },
+		"inner_track_vertex" : { "bCoef" : 1, "cMask" : ["red", "blue", "ball"] },
+		"inner_track" : { "vis" : true, "bCoef" : 1, "cMask" : ["red", "blue", "ball"], "color" : "808080" },
+		"word_vertex" : { "bCoef" : 1, "cMask" : [""] },
+		"word_1" : { "vis" : true, "bCoef" : 1, "cMask" : [""], "color" : "ff8080" },
+		"word_2" : { "vis" : true, "bCoef" : 1, "cMask" : [""], "color" : "80ff80" },
+		"word_3" : { "vis" : true, "bCoef" : 1, "cMask" : [""], "color" : "8080ff" },
+		"word_finish" : { "vis" : true, "bCoef" : 1, "cMask" : [""], "color" : "CCCCCC" },
+		"red_wall" : { "vis" : true, "bCoef" : 0, "cMask" : ["blue"], "color" : "FF4A4A" },
+		"cushion" : { "radius" : 12, "invMass" : 0.25, "bCoef" : 0.5, "color" : "CCCCCC" }
+	},
+
+	"playerPhysics" : {
+		"bCoef" : 0.5,
+		"invMass" : 0.5,
+		"damping" : 0.985,
+		"acceleration" : 0.09,
+		"kickingAcceleration" : 0,
+		"kickingDamping" : 0.985,
+		"kickStrength" : -3
+	},
+
+	"ballPhysics" : {
+		"radius" : 15,
+		"bCoef" :  0.000000000000000000001,
+		"invMass" : 100000,
+		"damping" : 1.0004,
+		"color" : "FFFFFF",
+		"cMask" : ["all"],
+		"cGroup" : ["ball"]
+	}
+}
